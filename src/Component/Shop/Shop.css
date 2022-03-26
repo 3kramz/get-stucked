@@ -14,3 +14,6 @@
 .cart-container{
     position:sticky;
 }
+.cart-header{
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 .cart{
     padding:10px;
     margin:10px 10px;
+    height:80px;
     display: flex;
     border: 1px solid lightgray;
     border-radius: 10px ;
@@ -10,5 +11,6 @@
 .cart img{
     width: 60px;
     height:60px;
-    border-radius: 50%;
+    margin-right: 10px;
+    /* border-radius: 50%; */
 }

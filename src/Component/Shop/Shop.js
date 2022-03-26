@@ -45,13 +45,15 @@ const Shop = () => {
     }
 
     // handle randome gun
-    let randomGun ;
+    const [randomGun, setRandomGun] = useState({})
+
     const handleChoose = () => {
-        randomGun = randomNumber(cart.length - 1)
-       
+        const i = randomNumber(cart.length - 1)
+        console.log(i)
+        setRandomGun(cart[i])
     }
- 
-    
+    console.log(randomGun)
+
     const handleAgain = () => setCart([])
     return (
         <div className='shop-container'>
@@ -59,15 +61,13 @@ const Shop = () => {
                 {products.map(gun => <Gun gun={gun} handleEvent={handleEvent} key={gun.id}> </Gun>)}
             </div>
             <div className="cart-container">
-                <h3 >Selected Guns</h3>
+                <h3 className='cart-header'>Selected Guns</h3>
                 {cart.map(gun => <Cart key={gun.id} gun={gun}></Cart>)}
 
-                <button onClick={handleChoose} className="btn">Choose One for me </button>
-
-                
-
+                <button  onClick={handleChoose} className="btn">Choose One for me </button>
+                {randomGun.id && <Cart gun={randomGun}></Cart>}
                 <button onClick={handleAgain} className="btn">Start Again </button>
-               
+
             </div>
         </div>
     );
