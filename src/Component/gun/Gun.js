@@ -7,7 +7,7 @@ const Gun = ({gun , handleEvent}) => {
         <img src={gun.img} alt="" />
         <h2>{gun.name}</h2>
         <h4>price ${gun.price}</h4>
-        <button className='btn' onClick={()=>handleEvent(gun)}>add to cart</button>
+        <div className='btn' onClick={()=>handleEvent(gun)}>add to cart</div>
         </div>
     );
 };

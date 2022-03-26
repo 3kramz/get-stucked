@@ -9,11 +9,27 @@
     padding: 20px;
 }
 .cart-container{
-    border:5px solid lightblue;
-}
-.cart-container{
+    border:5px solid lightgray;
+    
     position:sticky;
+    top:0;
+
+    padding: 20px;
+    border: 4px solid lightgray;
+    border-radius: 10px;
 }
 .cart-header{
     text-align: center;
 }
+@media screen and (max-width:600px) {
+    .product-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .shop-container{ 
+        grid-template-columns: 1fr;
+    }  
+    .cart-container{ 
+        width: 80%;
+        margin: 10px auto;
+    } 
+}   

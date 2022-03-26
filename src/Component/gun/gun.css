@@ -1,9 +1,9 @@
 .gun{
-width: 250px;
-height: 340px;
-padding: 20px;
-border: 4px solid lightgray;
-border-radius: 10px;
+    width: 250px;
+    height: 340px;
+    padding: 20px;
+    border: 4px solid lightgray;
+    border-radius: 10px;
 }
 .gun img{
     width: 100%;
@@ -16,9 +16,25 @@ border-radius: 10px;
     cursor:pointer;
     padding: 5px 20px;
     font-size:20px;
-    width:100%;
+    width:90%;
     margin: 10px auto;
 }
 .btn:hover{
 transform:scale(.99)
 }
+@media screen and (max-width:600px) {
+    
+    .gun{
+        width:80%;
+        height: 340px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 4px solid lightgray;
+        border-radius: 10px;
+        }  
+        .btn{
+            
+            width:80%;
+            margin: 10px auto;
+        }
+}   

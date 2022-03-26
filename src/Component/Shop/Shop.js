@@ -64,9 +64,9 @@ const Shop = () => {
                 <h3 className='cart-header'>Selected Guns</h3>
                 {cart.map(gun => <Cart key={gun.id} gun={gun}></Cart>)}
 
-                <button  onClick={handleChoose} className="btn">Choose One for me </button>
+                <div  onClick={handleChoose} className="btn">Choose One for me </div>
                 {randomGun.id && <Cart gun={randomGun}></Cart>}
-                <button onClick={handleAgain} className="btn">Start Again </button>
+                <div onClick={handleAgain} className="btn">Start Again </div>
 
             </div>
         </div>
