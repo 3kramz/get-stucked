@@ -5,16 +5,32 @@ import './Shop.css'
 
 
 const Shop = () => {
+    // fatched data
     const [products, setProducts] = useState([])
-
+    // data fatching
     useEffect(() => {
         fetch("fakeDb.json")
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
 
-    const handleEvent = event => {console.log(event)}
+    const [cart, setCart] = useState([])
+    // add to cart btn event handler
+    const handleEvent = event => {
 
+        if (cart.length < 4) {
+            const exixt = cart.find(gun => gun.id === event.id)
+            if (!exixt) {
+                const newCart = [...cart, event]
+                setCart(newCart)
+            }
+        } else {
+            alert("you can't add gun more then four")
+
+        }
+
+    }
+    console.log(cart)
     return (
         <div className='shop-container'>
             <div className="product-container">
