@@ -1,13 +1,13 @@
 import React from 'react';
 import './gun.css'
 
-const Gun = ({gun}) => {
+const Gun = ({gun , handleEvent}) => {
     return (
         <div className='gun'>
         <img src={gun.img} alt="" />
-        <h4>{gun.name}</h4>
-        <h6>{gun.price}</h6>
-        <button>add to cart</button>
+        <h2>{gun.name}</h2>
+        <h4>price ${gun.price}</h4>
+        <button className='btn' onClick={()=>handleEvent(gun)}>add to cart</button>
         </div>
     );
 };

@@ -1,6 +1,23 @@
 .gun{
-width: 300px;
+width: 250px;
+height: 340px;
+padding: 20px;
+border: 4px solid lightgray;
+border-radius: 10px;
 }
 .gun img{
     width: 100%;
+    height: 200px;
+}
+.btn{
+    border: none;
+    background: lightgray;
+    cursor:pointer;
+    padding: 5px 20px;
+    font-size:20px;
+    width:100%;
+    margin: 0 auto;
+}
+.btn:hover{
+transform:scale(.99)
 }
