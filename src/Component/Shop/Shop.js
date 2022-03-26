@@ -68,7 +68,7 @@ const Shop = () => {
 
                 <div  onClick={handleChoose} className="btn">Choose One for me </div>
                 {randomGun.id && <Cart gun={randomGun}></Cart>}
-                <div onClick={handleAgain} className="btn">Start Again </div>
+                <div onClick={handleAgain} className="btn">Clear Cart</div>
 
             </div>
         </div>
