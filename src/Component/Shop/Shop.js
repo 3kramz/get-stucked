@@ -41,7 +41,6 @@ const Shop = () => {
         } else {
             return num
         }
-
     }
 
     // handle randome gun
@@ -49,12 +48,15 @@ const Shop = () => {
 
     const handleChoose = () => {
         const i = randomNumber(cart.length - 1)
-        console.log(i)
+       
         setRandomGun(cart[i])
     }
-    console.log(randomGun)
+    
 
-    const handleAgain = () => setCart([])
+    const handleAgain = () => {
+        setCart([])
+        setRandomGun({})
+    }
     return (
         <div className='shop-container'>
             <div className="product-container">
