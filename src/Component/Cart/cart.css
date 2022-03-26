@@ -1,0 +1,14 @@
+.cart{
+    padding:10px;
+    margin:10px 10px;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 10px ;
+    align-items: center;
+    
+}
+.cart img{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}

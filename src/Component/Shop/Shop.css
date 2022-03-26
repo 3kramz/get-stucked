@@ -11,3 +11,6 @@
 .cart-container{
     border:5px solid lightblue;
 }
+.cart-container{
+    position:sticky;
+}
